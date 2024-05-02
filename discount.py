@@ -11,3 +11,10 @@ elif mode == "D":
     discount = 5/100
 elif mode == "N":
     discount = 2/100
+elif mode == "O":
+    discount = 0
+else:
+    print("Invalid Mode")
+    exit()
+
+print("Payable amount:", bill * (1 - discount))
