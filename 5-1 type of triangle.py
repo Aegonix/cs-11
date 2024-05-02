@@ -1,3 +1,6 @@
+
+#? WAP to input 3 side lengths of a triangle and classify it into scalene, isosceles and equilateral.
+
 a = float(input("Enter length of side a: "))
 b = float(input("Enter length of side b: "))
 c = float(input("Enter length of side c: "))

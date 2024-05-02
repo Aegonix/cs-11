@@ -1,3 +1,13 @@
+
+#? WAP to enter bill amount and ask the user their payment mode and give discount based on payment mode.
+#? Also display the net payable amount.
+
+#? Mode:
+#? Credit card - 10% discount
+#? Debit card - 5% discount
+#? Net banking - 2% discount
+#? otherwise - No discount
+
 bill = float(input("Enter billing amount: "))
 mode = input("Enter your mode of payment: ")
 

@@ -1,3 +1,6 @@
+
+#? WAP to check if a person is eligible to vote.
+
 age = input("Enter your age: ")
 
 if age.isdigit():

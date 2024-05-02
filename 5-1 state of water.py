@@ -1,3 +1,6 @@
+
+#? WAP to input temperature of water and print its physical state.
+
 temp = float(input("Enter temperature of water: "))
 
 if temp <= 0:

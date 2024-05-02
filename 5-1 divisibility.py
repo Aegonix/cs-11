@@ -1,3 +1,6 @@
+
+#? WAP to test the divisibility of a number given by the user with another number.
+
 divident = int(input("Enter divident: "))
 divisor = int(input("Enter divisor: "))
 

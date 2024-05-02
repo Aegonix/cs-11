@@ -1,3 +1,6 @@
+
+#? WAP to find average of 5 marks of students.
+
 math = float(input("Enter maths marks: "))
 science = float(input("Enter science marks: "))
 eng = float(input("Enter english marks: "))
