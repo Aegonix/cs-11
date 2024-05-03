@@ -13,7 +13,8 @@ mode = input("""Enter your mode of payment:
 c/C - Credit Card
 d/D - Debit Card
 n/N - Net Banking
-o/O - Other""")
+o/O - Other
+> """)
 
 if mode.lower() == "c":
     discount = bill / 10
