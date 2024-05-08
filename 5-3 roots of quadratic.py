@@ -12,7 +12,7 @@ if a == 0:
     print("Please input a valid x^2 coefficient.")
 
 else:
-    x1 = ((b * -1) + sqrt((b ** 2) - (4 * a * c))) / (2 * a)
-    x2 = ((b * -1) - sqrt((b ** 2) - (4 * a * c))) / (2 * a)
+    x1 = ((-b) + sqrt((b ** 2) - (4 * a * c))) / (2 * a)
+    x2 = ((-b) - sqrt((b ** 2) - (4 * a * c))) / (2 * a)
 
     print("The roots are:", x1, "and", x2)
