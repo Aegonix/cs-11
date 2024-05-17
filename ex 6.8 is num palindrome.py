@@ -3,10 +3,15 @@
 #? Write a function that checks whether an input 
 #? number is a palindrome or not.
 
-num = int(input("Enter a number: "))
+n = input("Enter a number: ")
+i = len(n) - 1
+reverse = ""
 
-if num == int(str(num)[::-1]):
-    print("The number is a palindrome.")
+while i >= 0:
+    reverse += n[i]
+    i -= 1
 
+if reverse == n:
+    print("Yes,", n, "is a palindrome.")
 else:
-    print("The number is not a palindrome.")
+    print("No,", n, "is not a palindrome.")
