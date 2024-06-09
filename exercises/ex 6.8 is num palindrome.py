@@ -3,15 +3,19 @@
 #? Write a function that checks whether an input 
 #? number is a palindrome or not.
 
-n = input("Enter a number: ")
-i = len(n) - 1
-reverse = ""
+num = int(input("Enter any integer: "))
 
-while i >= 0:
-    reverse += n[i]
-    i -= 1
+n = num
+digits = len(str(n))
 
-if reverse == n:
-    print("Yes,", n, "is a palindrome.")
-else:
-    print("No,", n, "is not a palindrome.")
+for i in range(1, digits + 1, 2):
+    ones_place = n % 10
+    first_place = n // (10 ** (digits - i))
+
+    if ones_place != first_place:
+        print(n, "is not a palindrome")
+        break
+    
+    else:
+        n %= (10) ** (digits - i)
+        n //= 10
