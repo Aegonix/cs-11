@@ -1,16 +1,12 @@
 
 #? WAP to find the number of occurences of a digit in a number.
 
-n = input("Enter the number: ")
-d = input("Enter the digit to count for: ")
+n = int(input("Enter the number: "))
+d = int(input("Enter the digit to count for: "))
+occurences = 0
 
-x = 0
-i = 0
+for i in str(n):
+    if int(i) == d:
+        occurences += 1
 
-while i < len(n):
-    if n[i] == d:
-        x += 1
-
-    i += 1
-
-print(x)
+print(occurences)
