@@ -5,26 +5,29 @@
 n = int(input("Enter the number of books: "))
 
 max = 0
-min = 999999999999999999999999999999999999999999999999999999999999999999999999999
+min = max
 max_name = 0
 min_name = 0
-i = 0
 
-while i < n:
-    type = input("Enter the type of book: ")
-    name = input("Enter the name of book: ")
-    price = int(input("Enter the price of book: "))
+for i in range(n):
+    name = input("Enter the name of book " + str(i + 1) + ": ")
+    type = input("Enter the type of book " + str(i + 1) + ": ")
+    price = int(input("Enter the price of book " + str(i + 1) + ": "))
 
-    if price > max:
+    if not i:
         max = price
-        max_name = name
-
-    if price < min:
         min = price
+        max_name = name
         min_name = name
+    
+    else:
+        if price > max:
+            max = price
+            max_name = name
 
-    i += 1
+        if price < min:
+            min = price
+            min_name = name
 
-
-print("The highest price book is", max_name, "with price", max)
-print("The lowest price book is", min_name, "with price", min)
+print("The most expensive book is", max_name, "with price", max)
+print("The cheapest book is", min_name, "with price", min)
