@@ -5,13 +5,11 @@ a = float(input("Enter length of side a: "))
 b = float(input("Enter length of side b: "))
 c = float(input("Enter length of side c: "))
 
-x = {a, b, c}
+if a == b == c:
+    print("Equilateral triangle")
 
-if len(x) == 3:
-    print("Scalene triangle")
-
-elif len(x) == 2:
+elif a == b or a == c or b == c:
     print("Isosceles triangle")
 
-elif len(x) == 1:
-    print("Equilateral triangle")
+else:
+    print("Scalene triangle")
