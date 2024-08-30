@@ -1,16 +1,16 @@
 
 #? WAP to take any number and check if it is an armstrong. (using while loop)
 
-n = input("Enter a number: ")
-i = 0
+n = int(input("Enter a number to check if it is armstrong: "))
 sum = 0
+temp = n
 
-while i < len(n):
-    sum += int(n[i]) ** len(n)    
-    i += 1
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** len(str(n))
+    temp //= 10
 
-if sum == int(n):
-    print("Yes, it is an armstrong number.")
-
+if n == sum:
+    print("Yes, it is an Armstrong number.")
 else:
-    print("No, it is not an armstrong number.")
+    print("No, it is not an Armstrong number.")
