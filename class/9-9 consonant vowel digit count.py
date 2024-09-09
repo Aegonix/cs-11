@@ -6,7 +6,7 @@ digit_count = 0
 vowel_count = 0
 consonant_count = 0
 
-for i in range(string):
+for i in string:
     if i in "0123456789":
         digit_count += 1
 
