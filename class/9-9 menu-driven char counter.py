@@ -26,7 +26,7 @@ while True:
                
         print("The number of vowels is:", vowel_count, "\n\n")
 
-    if option == "2":
+    elif option == "2":
         consonant_count = 0
         for i in string:
             if i in "bcdfghjklmnpqrstvwxyz" or i in "BCDFGHJKLMNPQRSTVWXYZ":
@@ -34,7 +34,7 @@ while True:
         
         print("The number of consonants is:", consonant_count, "\n\n")
 
-    if option == "3":
+    elif option == "3":
         digit_count = 0
         for i in string:
             if i in "0123456789":
@@ -42,7 +42,7 @@ while True:
 
         print("The number of digits is:", digit_count, "\n\n")
 
-    if option == "4":
+    elif option == "4":
         spaces_count = 0
         for i in string:
             if i == " ":
@@ -50,7 +50,7 @@ while True:
         
         print("The number of spaces is:", spaces_count, "\n\n")
 
-    if option == "5":
+    elif option == "5":
         special_chars_count = 0
         for i in string:
             if i not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ":
@@ -58,6 +58,9 @@ while True:
 
         print("The number of special characters is:", special_chars_count, "\n\n")
 
-    if option == "6":
+    elif option == "6":
         print("Exiting...")
         break
+
+    else:
+        print("Unrecognized option. Please try again.\n\n")
