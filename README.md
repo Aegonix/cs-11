@@ -8,6 +8,8 @@
 ### Files are organized by date (MM/DD), and sorted into folders based on:
 - **programs done in class**
 - **textbook exercises**, (only programming and WAP... questions, not MCQs or objective questions)
+- **the Summer Assignment worksheet**
+- **questions for the CS journal**
 
 <br />
 
