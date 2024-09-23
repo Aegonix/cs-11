@@ -5,10 +5,10 @@ string = input("Enter a string: ")
 output = ""
 
 for i in string:
-    if string in "abcdefghijklmnopqrstuvwxyz":
+    if i in "abcdefghijklmnopqrstuvwxyz":
         output += chr(ord(i) - 32)
 
-    elif string in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+    elif i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
         output += chr(ord(i) + 32)
 
 print(output)
