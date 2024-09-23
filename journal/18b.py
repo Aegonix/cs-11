@@ -8,4 +8,4 @@ word = input("Enter a word: ")
 n = len(word)
 
 for i in range(n):
-    print(word[0 : (i + 1)])
+    print(word[: (i + 1)])
