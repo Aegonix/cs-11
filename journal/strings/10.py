@@ -11,4 +11,7 @@ for i in string:
     elif i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
         output += chr(ord(i) + 32)
 
+    else:
+        output += i
+
 print(output)
